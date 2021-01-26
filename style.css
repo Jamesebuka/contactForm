@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+body{
+    background: url('image/pexels-chan-walrus-941869.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    position: absolute;
+    top: 280px;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0px 20px;
+    margin-top:45px;
+}
+.contact-form{
+    max-width: 550px;
+    margin: 0px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 2px 8px whitesmoke;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 40px 0;
+    background: transparent;
+}
+.input-fields .input{
+    display: flex;
+    flex-direction: column;
+    margin: 6px 20px 40px 0;
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+.input-feilds,
+.msg{
+    width: 48%;
+}
+.input-field .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px;
+    color: whitesmoke;
+    width: 100%;
+}
+.msg textarea{
+    height: 212px;
+}
+.btn{
+    background: rgb(221, 138, 44);
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px whitesmoke;
+}
+.btn{
+    background: rgb(221, 138, 44);
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 2px whitesmoke;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields, 
+    .msg{
+        width: 100%;
+    }
+}
